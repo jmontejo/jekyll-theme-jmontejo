@@ -1,6 +1,6 @@
 .boxed {
   border: 2px solid $grey-color-light; 
-  margin: 10px;
+  margin: 2px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 $grey-color-light;
   overflow: auto;
@@ -16,13 +16,25 @@
 }
 
 .blogpost {
-  width: 30%;
-  min-width: 220px;
+  width: 29%;
+  height: 500px;
+  min-width: 200px;
+  @include media-query($on-palm) {
+    width: 95%;
+    height: auto;
+    float: center;
+  }
 }
 
 .blogimage{
   border-radius: 8px;	
   width: 100%;
   height: auto;
+  @include media-query($on-palm) {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
+
 }
 
