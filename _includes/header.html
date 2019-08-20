@@ -6,7 +6,7 @@
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     {%- assign title_url = / | relative_url -%}
     {%- if site.blog_homeurl>0 -%}
-    <a class="site-title" rel="author" href="{{ "{{site.blog_homeurl}}" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "{{site.blog_homeurl}}" | absolute_url }}">{{ site.title | escape }}</a>
     {% else %}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {%- endif -%}
