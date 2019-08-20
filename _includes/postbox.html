@@ -1,0 +1,21 @@
+<!-- begin post -->
+
+<div class="boxed blogpost rounded">
+    <a href="{{ post.url }}">      
+      {% if post.image %}
+      <img class="blogimage" src="{{ post.image }}" alt="{{ post.title }}"> 
+      {% else %}
+      <img class="blogimage" src="assets/images/pile.jpg" alt="{{ post.title }}"> 
+      {% endif %}
+    </a>
+  <div class="box-body">
+    <h2 class="box-title">
+      <a class="text-dark" href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>	    
+    <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:40 }}</h4>
+  </div>
+</div>
+
+<!-- end post -->

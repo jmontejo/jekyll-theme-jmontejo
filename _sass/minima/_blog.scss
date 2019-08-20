@@ -1,0 +1,28 @@
+.boxed {
+  border: 2px solid $grey-color-light; 
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 $grey-color-light;
+  overflow: auto;
+  float: left;
+}
+
+.boxed:hover {
+  border: 2px solid $grey-color;
+}
+
+.rounded{
+  border-radius: 8px;
+}
+
+.blogpost {
+  width: 30%;
+  min-width: 220px;
+}
+
+.blogimage{
+  border-radius: 8px;	
+  width: 100%;
+  height: auto;
+}
+
