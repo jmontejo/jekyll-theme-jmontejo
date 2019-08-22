@@ -276,11 +276,10 @@
   margin: 0 auto;
   li {
     float: left;
-    margin: 0 5px;
+    margin: 0px;
     &:first-of-type { margin-left: 0 }
     &:last-of-type { margin-right: 0 }
     a {
-      display: block;
       padding: $spacing-unit / 4;
       border: 1px solid $grey-color-light
     }
@@ -297,4 +296,8 @@
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width:         calc(50% - (#{$spacing-unit} / 2));
   }
+  .one-forth {
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
+  }  
 }
