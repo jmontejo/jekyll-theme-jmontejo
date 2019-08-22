@@ -30,6 +30,7 @@
 }
 
 .site-nav {
+  z-index: 100;
   @include relative-font-size(1.2);
   position: absolute;
   margin-top: 35px;
@@ -272,19 +273,11 @@
 
 
 .social-media-list {
-  display: table;
-  margin: 0 auto;
-  li {
-    float: left;
-    margin: 0px;
-    &:first-of-type { margin-left: 0 }
-    &:last-of-type { margin-right: 0 }
-    a {
-      padding: $spacing-unit / 4;
-      border: 1px solid $grey-color-light
-    }
-    &:hover .svg-icon { fill: currentColor; }
+  a {
+    padding: $spacing-unit / 4;
+    border: 1px solid $grey-color-light
   }
+  &:hover .svg-icon { fill: currentColor; }
 }
 
 
@@ -297,7 +290,7 @@
     width:         calc(50% - (#{$spacing-unit} / 2));
   }
   .one-forth {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit}));
+    width:         calc(25% - (#{$spacing-unit}));
   }  
 }
