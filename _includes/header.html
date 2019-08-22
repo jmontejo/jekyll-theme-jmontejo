@@ -7,10 +7,10 @@
     {%- assign title_url = / | relative_url -%}
     {%- if site.bloghomeurl -%}
     {%- if site.blogtitle -%}
-    <a class="site-title" rel="author" href="{{ site.bloghomeurl | absolute_url }}">{{ site.blogtitle | escape }} </a>
+    <a class="site-title" rel="author" href="{{ site.bloghomeurl | absolute_url }}">{{ site.blogtitle | replace: "CandyPink", " <span class='candypink relsize2_5'>CandyPink</span> " }} </a>
     {%- endif -%}
     {% else %}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"> {{ site.title | escape }} </a> 
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"> {{ site.title | replace: "CandyPink", " <span class='candypink relsize2_5'>CandyPink</span> " }} </a> 
     {%- endif -%}
 
 
