@@ -6,7 +6,9 @@
   border-bottom: 5px solid $grey-color;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background: url(../../assets/images/pink_sweets.jpeg) #fad0e1;
+  background: url(../../assets/images/copertina.jpeg) #fad0e1;
+  background-size: cover;
+  background-repeat: no-repeat;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
