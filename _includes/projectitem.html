@@ -5,12 +5,16 @@
       {% if project.image %}
       <img class="projectimage" src="{{ project.image }}" alt="{{ project.title }}"> 
       {% else %}
-      <img class="projectimage" src="assets/images/item.jpeg" alt="{{ project.title }}"> 
+      <img class="projectimage" src="assets/images/pile.jpg" alt="{{ project.title }}"> 
       {% endif %}
     </a>
   <div class="project-body">
-   <h2 class="project-title"> <a href="{{ project.link | absolute_url }}">{{ project.title }}</a></h2>
-    {{project.content}}
+    <h2 class="project-title"> <a href="{{ project.link | absolute_url }}">{{ project.title }}</a></h2>
+    {% if project.description %}
+    {{ project.description }}
+    {% else %}
+    {{project.content | strip_html | truncatewords:40}}
+    {% endif %}
   </div>
 </div>
 
