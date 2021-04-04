@@ -1,51 +1,44 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Material for students
+email: chiara.rizzi@cern.ch
+description: >- # this means to ignore newlines until "baseurl:"
+  Material for students
 
-show_excerpts: false # set to true to show excerpts on the homepage
-
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
-
-  # generate social links in footer
-  social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    rss: rss
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+baseurl: "/students" # the subpath of your site, e.g. /blog
+url: "https://crizzi.web.cern.ch" # the base hostname & protocol for your site, e.g. http://example.com
+gitlab_username:  crizzi
 
 # Build settings
+markdown: kramdown
 theme: minima
-
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+collections:
+  - start
+  - rpvmj
+  - multib
+
+navigation:
+  - name: Getting started
+    link: /students/start.html
+  - name: RPV MJ
+    link: /students/rpvmj.html
+  - name: Multi-b
+    link: /students/multib.html
+
+paginate: 3
+paginate_path: "/blog/page:num/"
