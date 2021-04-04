@@ -28,9 +28,12 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  - start
-  - rpvmj
-  - multib
+  start:
+    output: true
+  rpvmj:
+    output: true
+  multib:
+    output: true
 
 navigation:
   - name: Getting started
