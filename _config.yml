@@ -1,7 +1,7 @@
 title: Material for students
 email: chiara.rizzi@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  Material for students
+  Collection of material to help students in getting started with their projects. 
 
 baseurl: "/students" # the subpath of your site, e.g. /blog
 url: "https://crizzi.web.cern.ch" # the base hostname & protocol for your site, e.g. http://example.com
