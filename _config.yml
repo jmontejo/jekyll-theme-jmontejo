@@ -36,6 +36,8 @@ collections:
     output: true
   fcc:
     output: true
+  faser:
+    output: true
 
 navigation:
   - name: Getting started
@@ -46,6 +48,8 @@ navigation:
     link: /students/multib.html
   - name: FCC
     link: /students/fcc.html
+  - name: FASER
+    link: /students/faser.html
 
 paginate: 3
 paginate_path: "/blog/page:num/"
