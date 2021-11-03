@@ -1,10 +1,10 @@
 title: Material for students
 email: jmontejo@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  Collection of material to help students in getting started with their projects. 
+  Collection of material to help students in getting started with their projects.
 
-baseurl: "/students" # the subpath of your site, e.g. /blog
-url: "https://jmontejo.web.cern.ch/jmontejo" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jmontejo/students" # the subpath of your site, e.g. /blog
+url: "https://jmontejo.web.cern.ch" # the base hostname & protocol for your site, e.g. http://example.com
 gitlab_username:  jmontejo
 
 # Build settings
@@ -37,7 +37,7 @@ collections:
 
 navigation:
   - name: Getting started
-    link: /students/start.html
+    link: /jmontejo/students/start.html
   - name: RPV MJ
     link: /students/rpvmj.html
   - name: Multi-b
