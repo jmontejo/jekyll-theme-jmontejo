@@ -1,11 +1,11 @@
 title: Material for students
-email: chiara.rizzi@cern.ch
+email: jmontejo@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
   Collection of material to help students in getting started with their projects. 
 
 baseurl: "/students" # the subpath of your site, e.g. /blog
-url: "https://crizzi.web.cern.ch" # the base hostname & protocol for your site, e.g. http://example.com
-gitlab_username:  crizzi
+url: "https://jmontejo.web.cern.ch/jmontejo" # the base hostname & protocol for your site, e.g. http://example.com
+gitlab_username:  jmontejo
 
 # Build settings
 markdown: kramdown
@@ -34,10 +34,6 @@ collections:
     output: true
   multib:
     output: true
-  fcc:
-    output: true
-  faser:
-    output: true
 
 navigation:
   - name: Getting started
@@ -46,10 +42,6 @@ navigation:
     link: /students/rpvmj.html
   - name: Multi-b
     link: /students/multib.html
-  - name: FCC
-    link: /students/fcc.html
-  - name: FASER
-    link: /students/faser.html
 
 paginate: 3
 paginate_path: "/blog/page:num/"
